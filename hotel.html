@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TamilNadu Hotel</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: linear-gradient(120deg,#fffaf0,#ffe5b4);
+  color:#333;
+}
+
+/* Header */
+header{
+  background: linear-gradient(to right,#b84300,#ff8c00);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+  animation: slideDown 1s ease;
+}
+
+header h1{
+  font-size:3rem;
+}
+
+header p{
+  margin-top:10px;
+  font-size:1.2rem;
+}
+
+/* Menu Grid */
+.menu{
+  padding:50px 8%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+/* Menu Card */
+.menu-item{
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  overflow:hidden;
+  text-align:center;
+  transition:0.4s;
+  animation: fadeUp 1s ease;
+}
+
+.menu-item:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+.menu-item img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.menu-item h3{
+  margin:15px 0 5px;
+  color:#b84300;
+}
+
+.menu-item p{
+  font-size:0.95rem;
+  padding:0 10px;
+}
+
+.price{
+  display:block;
+  margin:10px 0 15px;
+  font-size:1.2rem;
+  font-weight:bold;
+  color:#2e7d32;
+}
+
+/* Footer */
+footer{
+  background:#1f1f1f;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+/* Animations */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes slideDown{
+  from{opacity:0; transform:translateY(-30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍛 TamilNadu Hotel</h1>
+  <p>Authentic South Indian Cuisine</p>
+</header>
+
+<section class="menu">
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Idli_Sambar.jpg" alt="Idli">
+    <h3>Idli</h3>
+    <p>Soft steamed rice cakes</p>
+    <span class="price">₹40</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Dosa_and_sambar.jpg" alt="Dosa">
+    <h3>Dosa</h3>
+    <p>Crispy golden dosa</p>
+    <span class="price">₹60</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Ven_Pongal.jpg" alt="Pongal">
+    <h3>Pongal</h3>
+    <p>Traditional ven pongal</p>
+    <span class="price">₹70</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Medu_vada.JPG" alt="Vada">
+    <h3>Medu Vada</h3>
+    <p>Crispy & fluffy vada</p>
+    <span class="price">₹30</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/South_Indian_Meals.jpg" alt="Meals">
+    <h3>South Indian Meals</h3>
+    <p>Rice, sambar, rasam & poriyal</p>
+    <span class="price">₹120</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Chicken_Biryani.jpg" alt="Biryani">
+    <h3>Chicken Biryani</h3>
+    <p>Seeraga samba biryani</p>
+    <span class="price">₹180</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Parotta.jpg" alt="Parotta">
+    <h3>Parotta</h3>
+    <p>Soft layered parotta</p>
+    <span class="price">₹45</span>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Payasam.jpg" alt="Payasam">
+    <h3>Payasam</h3>
+    <p>Traditional sweet dessert</p>
+    <span class="price">₹50</span>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 TamilNadu Hotel | Taste of Tamil Tradition</p>
+</footer>
+
+</body>
+</html>

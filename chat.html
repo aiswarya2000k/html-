@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center">Online Library Registration Form</h2>
+    <hr>
+
+    <form>
+        <table align="center" cellpadding="8">
+
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="4" cols="25" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
+
